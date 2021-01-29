@@ -61,13 +61,7 @@ function block_example_block_info() {
   // This sample shows how to provide default settings. In this case we'll
   // enable the block in the first sidebar and make it visible only on
   // 'node/*' pages. See the hook_block_info() documentation for these.
-  $blocks['example_empty'] = array(
-    'info' => t('Example: empty block'),
-    'status' => TRUE,
-    'region' => 'sidebar_first',
-    'visibility' => BLOCK_VISIBILITY_LISTED,
-    'pages' => 'node/*',
-  );
+  $blocks['example_empty'] = array('info' => t('Example: empty block'),'status' => TRUE,region' => 'sidebar_first','visibility' => BLOCK_VISIBILITY_LISTED,'pages' => 'node/*',)
 
   $blocks['example_uppercase'] = array(
     // info: The name of the block.
