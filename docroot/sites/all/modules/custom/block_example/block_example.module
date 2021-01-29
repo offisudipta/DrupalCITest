@@ -22,16 +22,12 @@
  */
 function block_example_menu() {
   $items['examples/block_example'] = array(
-    'page callback' => 'block_example_page',
-    'access callback' => TRUE,
-    'title' => 'Block Example',
+'page callback' => 'block_example_page',
+'access callback' => TRUE,
+'title' => 'Block Example',
   );
   return $items;
 }
-
-/**
- * Simple page function to explain what the block example is about.
- */
 function block_example_page() {
   $page = array(
     '#type' => 'markup',
