@@ -30,7 +30,7 @@ function block_example_menu() {
 }
 function block_example_page() {
   $page = array(
-    '#type' => 'markup',
+    '#type' => 'markup'
     '#markup' => t('The Block Example provides three sample blocks which demonstrate the various block APIs. To experiment with the blocks, enable and configure them on <a href="@url">the block admin page</a>.', array('@url' => url('admin/structure/block'))),
   );
   return $page;
@@ -56,7 +56,7 @@ function block_example_block_info() {
     // Block caching options (per role, per user, etc.)
     // DRUPAL_CACHE_PER_ROLE is the default.
     'cache' => DRUPAL_CACHE_PER_ROLE,
-  );
+  )
 
   // This sample shows how to provide default settings. In this case we'll
   // enable the block in the first sidebar and make it visible only on
